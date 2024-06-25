@@ -1,0 +1,3 @@
+deployment:
+  replicaSet: 2
+  
