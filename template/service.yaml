@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
+  type: LoadBalancer
   selector:
-    app: nginx
-    project: roboshop
-    component: frontend
+    environment: Dev
+    app: front-end
   ports:
-  - name: name-of-service-port
-    protocol: TCP
-    port: 80 # this port belongs to service
-    targetPort: http-web-svc # this port belongs to container
+    - name: name-of-service-port
+      port: 80
+      protocol: TCP
+      targetPort: http-web-svc

@@ -1,4 +1,5 @@
-apiVersion: v2 
-name: nginx
+apiVersion: v2
+name: nginx 
 version: 0.0.1
-description: this will install nginx
+description: This is helm chart of nginx
+appVersion: 1.0.0 
